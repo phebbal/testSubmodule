@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Workspot</title>
+	    <link rel="stylesheet" media="screen" href="./assets/stylesheets/login.css">
+	    <link rel="shortcut icon" type="image/x-icon" class="favicon" href="./assets/images/favicon.ico"> 
+	    <script type='text/javascript' src="./assets/javascript/jquery-1.12.4.js"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="block_login login-page-container">
+				<div class="logo">
+					<img alt="" src="./assets/images/Logo-Workspot.png">
+				</div>
+				<div class="info-container form-item">
+					Please enter your credentials
+				</div>
+				<p class="clear"></p>
+				<form id="signin_form" action="javascript:void(0)" method="POST">       
+			        <div class="form-item">
+			        	<input type="image" src="./assets/images/icons/user_gray.png" class="water-mark-icon">
+						<input class="form-text validate[required,custom[email]]" id="email_signin" type="text" value="" name="username" placeholder="User name"/>				
+					</div>	
+					<div class="form-item">
+						<input type="image" src="./assets/images/icons/password_gray.png" class="water-mark-icon">
+						<input class="form-text validate[required]" id="password" type="password" value="" name="password" autocomplete="off" placeholder="Password"/>	
+					</div>
+					<div class="buttons_wrapper">
+						<div class="buttons_wrapper_content">
+							<div class="form-item-buttons">
+							    <a href="javascript:void(0)" class="btn-sign-in" id="btnSignIn">Sign-in</a>
+							</div>
+							<div class="form-item-buttons updateCompanySettingBtnActionContainer">
+							    <a href="javascript:void(0)">Cancel</a>
+							</div>
+						</div>
+					</div>
+				</form>			
+		    </div>
+		</div>
+		<script type='text/javascript' src="./assets/javascript/workspot.js"></script>
+		<script type='text/javascript' src="./assets/javascript/login.js"></script>
+	</body>
+</html>
